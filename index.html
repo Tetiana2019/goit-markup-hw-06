@@ -401,11 +401,12 @@
               type="text"
               name="costomer-name"
               id="costomer-name"
+              placeholder=" "
             />
             <label class="form-label" for="costomer-name">Имя</label>
-            <!-- <svg class="costomer-icon">
+            <svg class="form-icon">
               <use href="./css/SVG/symbol-defs-2.svg#icon-name"></use>
-            </svg> -->
+            </svg>
           </div>
           <div class="form-field">
             <input
@@ -413,8 +414,12 @@
               type="tel"
               name="costomer-phone"
               id="costomer-phone"
+              placeholder=" "
             />
             <label class="form-label" for="costomer-phone">Телефон</label>
+            <svg class="form-icon">
+              <use href="./css/SVG/symbol-defs-2.svg#icon-phone"></use>
+            </svg>
           </div>
           <div class="form-field">
             <input
@@ -422,14 +427,19 @@
               type="email"
               name="costomer-email"
               id="costomer-email"
+              placeholder=" "
             />
             <label class="form-label" for="costomer-email">Почта</label>
+            <svg class="form-icon">
+              <use href="./css/SVG/symbol-defs-2.svg#icon-email"></use>
+            </svg>
           </div>
           <div class="form-field">
             <textarea
               class="modal-input textarea-input"
               name="costomer-comment"
               id="costomer-comment"
+              placeholder=" "
               rows="5"
             ></textarea>
             <label class="form-label textarea-label" for="costomer-comment"
@@ -437,13 +447,18 @@
             >
           </div>
         </form>
-        <div class="modal-checkbox">
-          <input type="checkbox" name="policy" id="policy" />
-          <label class="policy-label" for="policy">
-            Соглашаюсь с рассылкой и принимаю
-            <a class="policy-link" href="#">Условия договора</a></label
-          >
-        </div>
+        <label class="modal-checkbox">
+          <input
+            class="policy-checkbox"
+            type="checkbox"
+            name="policy"
+            id="policy"
+            placeholder=" "
+          />
+          <span class="policy-icon"></span>
+          Соглашаюсь с рассылкой и принимаю
+          <a class="policy-link" href="#">Условия договора</a>
+        </label>
         <button class="submit-btn modal-btn" type="submit">Отправить</button>
       </div>
     </div>
