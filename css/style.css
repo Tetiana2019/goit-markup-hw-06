@@ -653,7 +653,6 @@ footer {
 .modal-input:not(:placeholder-shown) + .textarea-label {
   transform: translate(-5px, -32px);
 }
-
 .form-icon {
   position: absolute;
   display: inline-block;
