@@ -71,4 +71,9 @@ section {
   border: 1px solid transparent;
   cursor: pointer;
 }
-
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+}

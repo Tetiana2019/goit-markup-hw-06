@@ -592,12 +592,7 @@ footer {
   border-color: var(--accent-color);
   outline: var(--accent-color);
 }
-.form-label {
-  position: absolute;
-  top: 50%;
-  left: 42px;
-  transform: translateY(-50%);
-}
+
 .modal-close {
   position: absolute;
   width: 30px;
