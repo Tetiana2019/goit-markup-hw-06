@@ -62,7 +62,7 @@
         <div class="container">
           <div class="order-items">
             <h1 class="order-title">Эффективные решения для вашего бизнеса</h1>
-            <button class="order-btn" data-modal-open>
+            <button class="submit-btn order-btn" type="submit" data-modal-open>
               Заказать услугу
             </button>
           </div>
@@ -373,7 +373,7 @@
             <h5 class="footer-title">подпишитесь на рассылку</h5>
             <form action="#" class="form-suscribe">
               <input type="email" placeholder="E-mail" />
-              <button class="footer-btn" type="submit">
+              <button class="submit-btn footer-btn" type="submit">
                 Подписаться
                 <svg class="footer-submit">
                   <use href="./css/SVG/symbol-defs-2.svg#icon-send"></use>
@@ -393,23 +393,58 @@
             <use href="./css/SVG/symbol-defs-2.svg#icon-modal-close"></use>
           </svg>
         </button>
-        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-        <form action="" class="modal-form">
-          <input 
-          
-          type="text" placeholder= "Имя" />
-          <input type="tel" placeholder="Телефон" />
-          <input type="email" placeholder="Почта" />
-          <input type="text" placeholder="Комментарий" />
+        <h1 class="modal-title">Оставьте свои данные, мы вам перезвоним</h1>
+        <form class="modal-form">
+          <div class="form-field">
+            <input
+              class="modal-input"
+              type="text"
+              name="costomer-name"
+              id="costomer-name"
+            />
+            <label class="form-label" for="costomer-name">Имя</label>
+            <!-- <svg class="costomer-icon">
+              <use href="./css/SVG/symbol-defs-2.svg#icon-name"></use>
+            </svg> -->
+          </div>
+          <div class="form-field">
+            <input
+              class="modal-input"
+              type="tel"
+              name="costomer-phone"
+              id="costomer-phone"
+            />
+            <label class="form-label" for="costomer-phone">Телефон</label>
+          </div>
+          <div class="form-field">
+            <input
+              class="modal-input"
+              type="email"
+              name="costomer-email"
+              id="costomer-email"
+            />
+            <label class="form-label" for="costomer-email">Почта</label>
+          </div>
+          <div class="form-field">
+            <textarea
+              class="modal-input textarea-input"
+              name="costomer-comment"
+              id="costomer-comment"
+              rows="5"
+            ></textarea>
+            <label class="form-label textarea-label" for="costomer-comment"
+              >Комментарий</label
+            >
+          </div>
         </form>
         <div class="modal-checkbox">
-          <input type="checkbox" id="modal" />
-          <label class="btn" for="modal"
-            >Соглашаюсь с рассылкой и принимаю
-            <a class="checkbox-link" href="#">Условия договора</a></label
+          <input type="checkbox" name="policy" id="policy" />
+          <label class="policy-label" for="policy">
+            Соглашаюсь с рассылкой и принимаю
+            <a class="policy-link" href="#">Условия договора</a></label
           >
         </div>
-        <button class="modal-btn" >Отправить</button>
+        <button class="submit-btn modal-btn" type="submit">Отправить</button>
       </div>
     </div>
 
