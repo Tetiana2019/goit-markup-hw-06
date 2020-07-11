@@ -588,6 +588,10 @@ footer {
   padding: 11px 42px;
   cursor: pointer;
 }
+.modal-input:focus {
+  border-color: var(--accent-color);
+  outline: var(--accent-color);
+}
 .form-label {
   position: absolute;
   top: 50%;
