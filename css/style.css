@@ -612,6 +612,11 @@ footer {
 .modal-icon {
   width: 11px;
   height: 11px;
+  fill: var( --balack-elements);
+}
+.modal-close:hover .modal-icon,
+.modal-close:focus .modal-icon {
+  fill: var(--accent-color);
 }
 .textarea-input {
   resize: none;
